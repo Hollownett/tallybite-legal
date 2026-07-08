@@ -72,6 +72,7 @@ const page = (title, bodyHtml, active) => `<!DOCTYPE html>
     <a href="./"${active === "home" ? ' class="active"' : ""}>Home</a>
     <a href="./privacy.html"${active === "privacy" ? ' class="active"' : ""}>Privacy Policy</a>
     <a href="./terms.html"${active === "terms" ? ' class="active"' : ""}>Terms of Use</a>
+    <a href="./credits.html"${active === "credits" ? ' class="active"' : ""}>Credits</a>
   </nav>
 </div></header>
 <main><div class="wrap">
@@ -83,17 +84,20 @@ ${bodyHtml}
 const dir = resolve(".");
 const privacy = mdToHtml(readFileSync(resolve("src/privacy.md"), "utf8"));
 const terms = mdToHtml(readFileSync(resolve("src/terms.md"), "utf8"));
+const credits = mdToHtml(readFileSync(resolve("src/credits.md"), "utf8"));
 
 writeFileSync(resolve("privacy.html"), page("TallyBite — Privacy Policy", privacy, "privacy"));
 writeFileSync(resolve("terms.html"), page("TallyBite — Terms of Use", terms, "terms"));
+writeFileSync(resolve("credits.html"), page("TallyBite — Credits & Licenses", credits, "credits"));
 
 const home = `<h1>TallyBite legal</h1>
 <p>TallyBite is an on-device calorie &amp; macro tracker. Your food diary, weight, and photos stay on your phone — there is no account and no server copy.</p>
 <ul>
 <li><a href="./privacy.html">Privacy Policy</a></li>
 <li><a href="./terms.html">Terms of Use</a></li>
+<li><a href="./credits.html">Credits &amp; Licenses</a></li>
 </ul>
 <p>Questions: <a href="mailto:hollownett@gmail.com">hollownett@gmail.com</a>.</p>`;
 writeFileSync(resolve("index.html"), page("TallyBite — Legal", home, "home"));
 
-console.log("built index.html, privacy.html, terms.html into", dir);
+console.log("built index.html, privacy.html, terms.html, credits.html into", dir);
