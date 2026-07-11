@@ -1,6 +1,6 @@
 # TallyBite — Terms of Use
 
-**Last updated: July 7, 2026**
+**Last updated: July 11, 2026**
 
 ## Using the app
 
@@ -16,7 +16,7 @@ Food recognition, portion sizes, nutrition values, calorie targets, and projecti
 
 ## Your data & backups
 
-Your data lives only on this phone — there's no account and no server copy (see the Privacy Policy for the full picture). That also means backups are in your hands: uninstalling the app or losing the phone loses the data with it. Export a backup from Settings → Data & backup to keep your own copy.
+Your data lives on this phone — there's no account, and TallyBite keeps no server copy of your diary, profile, or photos. The optional Advanced AI features send a single request to a recognition service that stores nothing and knows no account; the Privacy screen has the full picture. Because your data is on your phone, backups are in your hands: uninstalling the app or losing the phone loses the data with it. Export a backup from Settings → Data & backup to keep your own copy.
 
 ## Open data & licenses
 
@@ -26,9 +26,9 @@ The app's nutrition database, models, and fonts build on open data and open sour
 
 Use the app for yourself and within the law. Don't present the app's estimates as professional advice for other people, and don't use the bundled data or models outside what their licenses allow.
 
-## Purchases
+## Purchases and ads
 
-The core tracker is free. If an optional Pro upgrade is offered, payment is handled by Google Play under its own terms: subscriptions renew automatically until you cancel them in Google Play → Subscriptions, and a lifetime purchase is a one-time payment with no renewal.
+The core tracker is free, including unlimited on-device scanning. TallyBite Pro is an optional subscription — monthly or annual — that unlocks extras such as unlimited Advanced AI scans, an ad-free experience, and the weekly report and adaptive plan. Payment is handled by Google Play under its own terms, and the subscription renews automatically until you cancel it in Google Play → Subscriptions. Free users see banner ads and may choose to watch a rewarded video ad to unlock an extra Advanced AI scan; Advanced AI is opt-in for everyone, and each free account gets a small shared weekly allowance of these cloud scans.
 
 ## No warranty
 
@@ -40,8 +40,4 @@ To the maximum extent the law allows, the developer isn't liable for indirect or
 
 ## Changes to these terms
 
-These terms are published here and inside the app, and may change with an update — the date above tells you when they last did. Using the app after an update means you accept the updated terms.
-
-## Contact
-
-Questions about these terms or your privacy: **hollownett@gmail.com**.
+These terms ship inside the app and may change with an update — the date above tells you when they last did. Using the app after an update means you accept the updated terms.

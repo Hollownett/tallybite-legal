@@ -1,149 +1,57 @@
 # TallyBite — Privacy Policy
 
-**Last updated: 2026-07-08**
-
-TallyBite is a weight-loss and food-diary app that runs **on your device**. It has no account, no
-login, and no company server for your personal data. This policy explains exactly what data the app
-handles, where it stays, and the cases where information leaves your phone: the few you start
-yourself (online lookups, optional model downloads, backups you share) and — in the **free**
-version — **advertising**, which is the one thing that uses the network automatically (see
-"Advertising and analytics" below). The paid **TallyBite Pro** removes ads.
-
-If you have questions, contact: **hollownett@gmail.com**.
+**Last updated: July 11, 2026**
 
 ## The short version
 
-- **Everything you log stays on your phone.** Your diary, weight, body measurements, profile,
-  and saved foods live in a private database on your device. We never receive them.
-- **There is no account.** Your personal data is never uploaded to a server of ours.
-- **The times you send data yourself:** an optional online food/barcode lookup, an optional
-  AI-model download, and sharing a backup file to a destination you choose.
-- **The free version shows ads (Google AdMob).** Ads use your device's **advertising ID** and are
-  the one thing that works automatically over the network. **TallyBite Pro removes all ads.** See
-  "Advertising and analytics" below.
-- **Your photos are processed on-device** and are never uploaded unless you explicitly turn on a
-  photo-sharing option and then share a file yourself.
+TallyBite keeps your personal data on your device. There is no account, no login, and no TallyBite server: your food diary, your profile, the meal photos you attach and your weight history never leave your phone, and the app works fully offline. Two Google services do run automatically whenever you open the app — Google Play Billing, which checks whether your Google account owns a TallyBite Pro subscription, and Google AdMob, which uses your device's advertising ID and shows banner ads to users who are not subscribed. Everything else that touches the internet — online food lookups, AI-model downloads, backups — waits for you to tap it. Questions: hollownett@gmail.com.
 
 ## What stays on your device (and never leaves)
 
-All of the following is stored only in the app's private storage on your phone. It is not sent to
-us or to anyone else:
+Your profile (age, height, sex, activity level, goals and targets), your food diary including meal notes, your weight and body-measurement history, your saved foods, and the meal photos you attach are all stored only in the app's private storage on your phone. On-device personalization runs locally over your own data: when a photo scan is torn between two similar foods, the foods you log most often are ranked first. Food and nutrition values come from a read-only database bundled inside the app — looking up a food needs no internet.
 
-- **Your profile** — age, height, sex, activity level, and your weight goal and targets.
-- **Your food diary** — everything you log, including notes you add to a meal.
-- **Body-composition history** — weight and any measurements you record.
-- **Your saved/personal foods.**
-- **Meal photos** you attach — kept in the app's private storage and used on-device for food
-  recognition.
-- **On-device learning** — small personalization calculations (for example, how the app nudges
-  portion estimates based on your past edits) run locally over your own data and never leave the
-  phone.
+## When information leaves your phone
 
-The app's food and nutrition information comes from a **read-only nutrition database bundled
-inside the app**. Looking up a food in that database needs no internet and sends nothing anywhere.
+Some requests happen automatically, with no tap from you. (1) Each time the app starts, and each time you return to it, it asks Google Play Billing whether your Google account owns a TallyBite Pro subscription. (2) Each time the app starts, the Google AdMob SDK initialises: it reads your ads-consent status, may show Google's consent form, and requests banner ads for users who are not subscribed — see “Advertising and analytics” below. (3) If an AI-model download you started earlier was interrupted, it resumes on its own the next time the app opens. Everything else waits for you: tapping “Search online” sends that search term or barcode number — and nothing else — to the Open Food Facts public database to fetch nutrition facts; choosing to install an optional AI model downloads the model files to your device, sending none of your data; and creating a backup writes a single file and hands it to your phone's share sheet, where you decide where it goes, with the app itself never uploading it. No request TallyBite makes carries your diary, your profile, your meal photos, your weight, or your health data.
 
-## When information leaves your phone — and only when you ask
-
-Apart from **advertising in the free version** (see "Advertising and analytics"), the app makes
-**no background or automatic network requests**. The network access below happens only in response
-to a specific tap:
-
-1. **Online food / barcode lookup (optional).** When you tap **"Search online"** on a name search
-   or after scanning a barcode, the app sends that search term or barcode number to the
-   **Open Food Facts** public database to fetch nutrition facts. It sends only the term or barcode
-   — never your diary, profile, photos, or identity. Open Food Facts is a third-party service with
-   its own privacy practices. If you never tap "Search online," no such request is made.
-
-2. **AI model download (optional).** TallyBite's standard food recognition is built into the app and
-   needs no download. If you choose to install an optional, more capable AI model from the app's
-   **AI & recognition** settings, the app downloads the model files from their public host. This
-   transfers only the model files **to** your device; none of your data is sent in the process.
-
-3. **Backup sharing (optional, you choose the destination).** If you create a **backup** of your
-   data, the app writes a single file and hands it to your phone's standard **share sheet**. You
-   decide where it goes (save it, email it, put it in your cloud drive, etc.). The app itself never
-   uploads the file. A backup does **not** include your meal photos unless you separately turn on
-   the **"Include photos"** option, which is **off by default**.
-
-The app requests the **Internet** permission only to make the above user-initiated requests
-possible. It is never used to send your personal data automatically.
+There is one more thing you can choose to send from the “Describe a meal” screen, and it is words, not a picture. If you turn on **Advanced AI** and use it there, the meal description you type — or speak, in which case your phone turns your voice into text on the device and sends **only that text** — is sent to the same TallyBite recognition service described under “Camera and photos”, which reads it and returns the foods it names, each with a typical serving size to get you started. **No photo and no audio ever leave your phone on this path: only the text.** Those servings are an **estimate** the app marks unverified for you to check before you log. Like every cloud feature it is opt-in, and for a free user each description counts against the same small shared allowance of **3 free Advanced AI scans per week** (Pro removes the cap); the Lite mode on the same screen parses your words entirely on your phone and sends nothing. The server stores neither your description nor the foods it returns.
 
 ## Camera and photos
 
-The camera is used to take pictures of food and to scan product barcodes. Photos you take or pick
-are used **on your device** for food recognition and are saved in the app's private storage so they
-can appear next to your diary entries. **Your photos are never uploaded** by the app. The only way a
-photo leaves your phone is if you turn on the optional "Include photos" setting and then share a
-backup yourself, to a destination you pick.
+The camera takes pictures of food and scans product barcodes. Photos you take or pick are processed on your device for food recognition and saved in the app's private storage so they can appear next to your diary entries.
+
+Photos are not uploaded, with one exception that you control. If you turn on **Advanced AI recognition** (Settings → AI & recognition) — opt-in for everyone, not only Pro subscribers — you draw a rectangle around your meal, or several rectangles around individual foods, and tap Recognize. Every cropped rectangle you draw is sent together in one request, so a larger AI model can name every food in each one. Each rectangle is a box, not a cut-out: it can include several foods and some of the plate or table. For a meal photo the reply is **names only** — a scanned meal's calories and portion come from your phone's database, never from your picture. Scanning a nutrition label, described below, is the one exception.
+
+Sent with each request is proof of who's asking: a random **ID for this app install**, so the server can count your **3 free Advanced AI scans per week** — a single weekly allowance shared across this meal scan, the label scan and the Describe feature — or, if you are Pro, your **Google Play purchase token** instead, which removes that weekly cap entirely. This install ID is not your name or your account, and it carries no link to any identifier used elsewhere in the app; it is cleared the moment you clear the app's data, uninstall, or reinstall.
+
+There is a second thing the server can be asked, and it is not a photo. If the food the cloud just named is one the app's built-in nutrition database has never heard of, the app sends **the name of that food, on its own, with no image and no part of your photo**, and the server replies with a typical serving size and its calories. Those numbers are an **estimate**: the app marks them as unverified and asks you to check them before you rely on them. Ordinary foods never trigger this, because their nutrition is already on your phone.
+
+There is one more thing you can point the camera at: a product's **nutrition-facts label**. If you choose to scan a nutrition label (an option on the barcode screen), a photo of that label is sent to the same server so it can read the nutrition facts printed on it, and the product name, serving size, calories and nutrients from the label come back for you to check. This is the one place where calories are read from a picture you send; everywhere else a scanned food's portion and calories come from your phone's database, not your photo. What comes back is still an **estimate** — a label can be misread — so the app marks it unverified and asks you to confirm it before you log it. Reading a label is opt-in like every cloud feature and counts against the same shared allowance of **3 free Advanced AI scans per week** (Pro removes the cap); it needs a connection, so with no internet the label is not read and you enter the food yourself.
+
+The server stores neither the image, nor the names, nor the numbers. Nothing is sent when you scan offline: your phone tries to name the food itself first, and a photo it can name never leaves your device. Nothing is sent until you turn Advanced AI recognition on, and you can turn it off again at any time. Your diary, weight, profile and photo library are never sent.
+
+The only other way a photo leaves your phone is if you turn on the optional “Include photos” setting and then share a backup yourself.
 
 ## Health Connect (optional)
 
-If you connect Android **Health Connect**, TallyBite can **read** your weight and step data that your
-other health apps have already stored there, to show trends and improve calorie estimates. This is
-**read-only** and happens on your device — the app does not write to Health Connect, does not create
-an account, and does not transmit this data anywhere. You can revoke this access at any time in
-Health Connect or in your phone's settings.
+If you connect Android Health Connect, TallyBite can read the weight and step data your other health apps have stored there, to show trends and improve calorie estimates. This is read-only and happens on your device — nothing is written back and nothing is transmitted. You can revoke this access at any time in your phone's settings.
 
 ## Advertising and analytics
 
-The **free** version of TallyBite shows banner ads through **Google AdMob** (the Google Mobile Ads
-SDK). To serve and measure those ads, AdMob **collects and shares with Google** your device's
-**advertising ID** and limited device and ad-interaction information. This data is used for
-**advertising** — including measuring ad performance and detecting invalid or fraudulent traffic —
-and it is the one thing the app sends automatically. Google acts as an independent controller of this
-data under **Google's Privacy Policy** (https://policies.google.com/privacy) and **"How Google uses
-information from sites or apps that use our services"** (https://policies.google.com/technologies/partner-sites).
-
-You are in control of this:
-
-- In the **EEA/UK**, the app shows a **consent prompt** (Google's User Messaging Platform) before
-  requesting ads, and you can change or withdraw your choice.
-- You can **reset or delete your advertising ID**, or opt out of ad personalization, at any time in
-  **Android Settings → Privacy → Ads**.
-- **TallyBite Pro (paid) removes all ads** — subscribers get no ads and no advertising-ID collection
-  for advertising.
-
-Apart from AdMob, TallyBite uses **no other third-party analytics or tracking SDKs**. It keeps only
-**local, on-device** diagnostic counts (for example, how often a recognition step ran) that stay on
-your phone and never include your images, food entries, or personal details.
-
-## Purchases (TallyBite Pro)
-
-TallyBite Pro subscriptions are processed by **Google Play Billing**. TallyBite has no payment server
-and never receives or stores your card or payment details — Google handles the transaction under its
-own terms. To unlock Pro, the app asks **Google Play on your device** whether you have an active
-subscription; that check involves no server of ours.
+TallyBite uses no analytics, attribution or crash-reporting SDK: the only usage data it keeps is local, on-device diagnostic counts (for example, how often a recognition step ran), which stay on your phone and never include your images, food entries, or personal details. It does use one advertising SDK, Google AdMob. AdMob starts when the app opens and can read your device's advertising ID together with your IP address and general device information; Google uses these to serve, cap and measure ads, and — only where you have given consent — to personalise them. Banner ads appear on the Today and History lists only, never during camera capture or a scan, and not at all for TallyBite Pro subscribers; the AdMob SDK still initialises on every launch regardless. You may also choose to watch a rewarded video ad to unlock an extra Advanced AI scan (added to the shared weekly allowance): that ad is opt-in — it never appears unless you tap “Watch an ad” — and uses the same AdMob SDK and advertising ID, with the extra scan credited by Google's verified ad-completion callback. In the EEA and the UK, Google's consent form asks your permission before any personalised ads are served. You can reset your advertising ID, or tell Android to stop apps from using it, in your phone's settings under Privacy. TallyBite never sends your diary, profile, photos, weight, or health data to Google, to AdMob, or to any advertiser. What Google does with the data it collects through AdMob and Google Play Billing is governed by Google's own privacy policy.
 
 ## Children
 
-TallyBite is intended for adults: the Terms of use require users to be **18 or older**, and the app
-enforces this at the date-of-birth entry. It is not directed at children and does not knowingly
-collect data from them, and it requests ads with **child-directed treatment turned off**. Because the
-app stores your logs locally and has no account, it does not gather personal information for any user
-beyond what that user enters on their own device.
+TallyBite is intended for adults: the Terms of use require users to be 18 or older, and the app enforces this at the date-of-birth entry. It is not directed at children and does not knowingly collect data from them. Ads are requested as not child-directed, and are limited to a general-audience content rating.
 
 ## Data retention and deletion
 
-Your data stays on your device until you delete it. You can delete captured corrections from Settings,
-delete individual entries in the app, or remove all app data by uninstalling the app or clearing its
-storage in Android settings. Because we never receive your data, there is nothing for us to delete
-on a server.
+Your data stays on your device until you delete it: delete captured corrections from Settings, delete individual entries in the app, or remove everything by uninstalling the app or clearing its storage in Android settings. Because TallyBite has no server, we never receive that data and there is nothing for us to delete on our side. Data that Google collects through AdMob or Google Play Billing is held by Google, not by us, and is governed by Google's privacy policy; you can reset your advertising ID in your phone's settings.
 
-## Future changes
+## What is live now, and future changes
 
-This version adds an optional **TallyBite Pro subscription** (Google Play Billing) and **advertising**
-in the free tier (Google AdMob) — both described above. Your diary, profile, photos, and health data
-still stay on your device and are unaffected. Future versions may add other optional online features;
-if any of them change what leaves your device, this policy and the Google Play Data Safety details
-will be updated before those features ship.
-
-## Where to read this policy
-
-This policy ships **inside the app** (Settings → Privacy → "Read the full privacy policy") so it is
-always readable offline, and — once the app is distributed through an app store — it will also be
-posted at a public URL listed on the store page.
+Advertising and in-app purchases are live in this version: banner ads for users who are not subscribed, and a Pro subscription processed by Google Play Billing. TallyBite runs exactly one server of its own — the recognition service described under “Camera and photos”, which receives the cropped rectangles you draw around your meal, a photo of a nutrition label if you scan one, and the words you type or speak to describe a meal (text only — never any audio) if you use Advanced AI on the Describe screen — whenever you turn Advanced AI on and tap to run it. That is opt-in for every user, not only a Pro subscriber; Pro simply removes the free tier's weekly scan cap. It holds no account, stores nothing, and never sees your diary. No version will begin sending your diary, profile, or health data off your phone without this policy and the Play Store data-safety details being updated before that feature ships.
 
 ## Changes to this policy
 
-If we change this policy, we will update the "Last updated" date above, ship the new version with
-the next app update, and post it at the same public URL.
+If this policy changes, the “Last updated” date above changes with it; the new version ships with the next app update and is posted at the policy's public URL once the app is distributed through an app store.
