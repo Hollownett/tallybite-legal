@@ -1,6 +1,8 @@
 # TallyBite — Terms of Use
 
-**Last updated: July 11, 2026**
+**Last updated: July 13, 2026**
+
+
 
 ## Using the app
 
@@ -16,7 +18,7 @@ Food recognition, portion sizes, nutrition values, calorie targets, and projecti
 
 ## Your data & backups
 
-Your data lives on this phone — there's no account, and TallyBite keeps no server copy of your diary, profile, or photos. The optional Advanced AI features send a single request to a recognition service that stores nothing and knows no account; the Privacy screen has the full picture. Because your data is on your phone, backups are in your hands: uninstalling the app or losing the phone loses the data with it. Export a backup from Settings → Data & backup to keep your own copy.
+Your data lives on this phone — there's no account, and TallyBite keeps no server copy of your diary, profile, or photos. The optional Advanced AI features send a single request to a recognition service that knows no account and keeps no diary or photo. It does keep a cache of food names and their nutrition, so the same food isn't looked up twice — food facts, never linked to you. The Privacy screen has the full picture. Because your data is on your phone, backups are in your hands: uninstalling the app or losing the phone loses the data with it. Export a backup from Settings → Data & backup to keep your own copy.
 
 ## Open data & licenses
 

@@ -1,12 +1,12 @@
 # TallyBite — Credits & licenses
 
-**Last updated: 2026-07-08**
+**Last updated: July 8, 2026**
 
-Everything TallyBite knows comes from open data, open models, and open source. Each source below is
-listed with the license it is used under. The verbatim MIT, Apache-2.0, and SIL Open Font License
-texts also travel inside the app and are readable offline under **Settings → Legal & credits**.
 
-If you have questions, contact: **hollownett@gmail.com**.
+
+
+Everything TallyBite knows comes from open data, open models, and open source — listed here with
+their licenses. Questions: hollownett@gmail.com.
 
 ## Nutrition data
 
@@ -24,7 +24,7 @@ If you have questions, contact: **hollownett@gmail.com**.
 - [Vegetable Image Dataset](https://www.kaggle.com/datasets/misrakahmed/vegetable-image-dataset) — Vegetable photos for training — CC BY-SA 4.0
 - [Fruit and Vegetable Image Recognition](https://www.kaggle.com/datasets/kritikseth/fruit-and-vegetable-image-recognition) — Produce photos for training — CC0 1.0 (public domain)
 - [Fruits-360](https://github.com/fruits-360) — Augmentation-only produce photos — CC BY-SA 4.0
-- [MyFoodRepo (AIcrowd)](https://www.aicrowd.com/challenges/food-recognition-benchmark-2022) — Real-meal photos and the food-outline training data — CC BY 4.0 (AIcrowd Food Recognition)
+- [MyFoodRepo (AIcrowd)](https://www.aicrowd.com/challenges/food-recognition-benchmark-2022) — Real-meal photos + the food-outline training data — CC BY 4.0 (AIcrowd Food Recognition)
 - [Nutrition5k (Google Research)](https://github.com/google-research-datasets/Nutrition5k) — Dish photos with weighed nutrition, the portion estimator's training data — CC BY 4.0
 - [MobileSAM](https://github.com/ChaoningZhang/MobileSAM) — The bundled tap-to-outline segmentation model (Tag foods) — Apache 2.0
 
@@ -35,3 +35,8 @@ If you have questions, contact: **hollownett@gmail.com**.
 - [Ionicons](https://ionic.io/ionicons) — Every icon in the app — MIT
 - [llama.cpp / llama.rn](https://github.com/ggml-org/llama.cpp) — Runs the optional downloadable AI Pack models — MIT
 - [react-native-fast-tflite + TensorFlow Lite](https://github.com/mrousavy/react-native-fast-tflite) — Runs the built-in recognition model on your phone — MIT / Apache 2.0
+
+## Open-source license texts
+
+The verbatim MIT, Apache-2.0, and SIL Open Font License texts for the components above travel with
+the app and are readable offline in TallyBite under Settings → Legal & credits → Credits & licenses.
