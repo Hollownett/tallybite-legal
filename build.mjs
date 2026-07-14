@@ -10,7 +10,9 @@ const inline = (s) =>
 
 // Minimal, correct-enough markdown -> HTML for these docs (h1/h2, **bold**, - and 1. lists, paras).
 function mdToHtml(md) {
-  const lines = md.split(/\r?\n/);
+  // The app repository is the canonical source. Its markdown starts with multi-line maintainer
+  // comments and uses explicit section anchors; neither should appear as policy prose.
+  const lines = md.replace(/<!--[\s\S]*?-->/g, "").split(/\r?\n/);
   const out = [];
   let list = null; // "ul" | "ol" | null
   const closeList = () => { if (list) { out.push(`</${list}>`); list = null; } };
@@ -21,7 +23,12 @@ function mdToHtml(md) {
   for (const raw of lines) {
     const line = raw.trimEnd();
     if (/^#\s+/.test(line)) { flushPara(); closeList(); out.push(`<h1>${inline(line.replace(/^#\s+/, ""))}</h1>`); }
-    else if (/^##\s+/.test(line)) { flushPara(); closeList(); out.push(`<h2>${inline(line.replace(/^##\s+/, ""))}</h2>`); }
+    else if (/^##\s+/.test(line)) {
+      flushPara();
+      closeList();
+      const heading = line.replace(/^##\s+/, "").replace(/\s*\{#[a-z0-9-]+\}\s*$/i, "");
+      out.push(`<h2>${inline(heading)}</h2>`);
+    }
     else if (/^-\s+/.test(line)) { flushPara(); if (list !== "ul") { closeList(); out.push("<ul>"); list = "ul"; } out.push(`<li>${inline(line.replace(/^-\s+/, ""))}</li>`); }
     else if (/^\d+\.\s+/.test(line)) { flushPara(); if (list !== "ol") { closeList(); out.push("<ol>"); list = "ol"; } out.push(`<li>${inline(line.replace(/^\d+\.\s+/, ""))}</li>`); }
     else if (line === "") { flushPara(); closeList(); }

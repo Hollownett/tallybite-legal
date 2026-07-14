@@ -10,6 +10,6 @@ Public home for the **TallyBite** app's Privacy Policy and Terms of Use, served 
 Sources live in [`src/`](src) as Markdown; `build.mjs` renders them to styled static HTML.
 Regenerate with `node build.mjs`. The `.nojekyll` marker makes GitHub Pages serve the HTML as-is.
 
-The Privacy Policy and Terms here are kept in lockstep with the copy bundled inside the app
-(`docs/legal/*.md` in the app repo); Credits mirrors the in-app attribution ledger
-(`apps/mobile/src/content/credits.ts`).
+The files in `src/` mirror the canonical `docs/legal/*.md` files in the app repository. Copy all
+three sources, run `node build.mjs`, and publish the generated HTML in the same commit so the public
+policy cannot drift from the binary under review.
