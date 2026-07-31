@@ -26,12 +26,11 @@ their licenses. Questions: hollownett@gmail.com.
 - [Fruits-360](https://github.com/fruits-360) — Augmentation-only produce photos — CC BY-SA 4.0
 - [MyFoodRepo (AIcrowd)](https://www.aicrowd.com/challenges/food-recognition-benchmark-2022) — Real-meal photos + the food-outline training data — CC BY 4.0 (AIcrowd Food Recognition)
 - [Nutrition5k (Google Research)](https://github.com/google-research-datasets/Nutrition5k) — Dish photos with weighed nutrition, the portion estimator's training data — CC BY 4.0
-- [MobileSAM](https://github.com/ChaoningZhang/MobileSAM) — The bundled tap-to-outline segmentation model (Tag foods) — Apache 2.0
 
 ## Fonts & open source {#software}
 
-- [Plus Jakarta Sans](https://fonts.google.com/specimen/Plus+Jakarta+Sans) — The app's typeface — SIL Open Font License 1.1
-- [Space Grotesk & JetBrains Mono](https://fonts.google.com/specimen/Space+Grotesk) — Display and numeric typefaces — SIL Open Font License 1.1
+- [Instrument Sans](https://fonts.google.com/specimen/Instrument+Sans) — The app's typeface — SIL Open Font License 1.1
+- [JetBrains Mono](https://fonts.google.com/specimen/JetBrains+Mono) — The numeric typeface — SIL Open Font License 1.1
 - [Ionicons](https://ionic.io/ionicons) — Every icon in the app — MIT
 - [llama.cpp / llama.rn](https://github.com/ggml-org/llama.cpp) — Runs the optional downloadable AI Pack models — MIT
 - [react-native-fast-tflite + TensorFlow Lite](https://github.com/mrousavy/react-native-fast-tflite) — Runs the built-in recognition model on your phone — MIT / Apache 2.0
