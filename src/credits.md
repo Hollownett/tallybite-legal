@@ -1,11 +1,11 @@
-# TallyBite — Credits & licenses
+# Gramwise — Credits & licenses
 
-**Last updated: July 8, 2026**
+**Last updated: August 21, 2026**
 
 <!-- Mirrors apps/mobile/src/content/credits.ts (the in-app OFFLINE ledger). Keep both in sync. -->
 <!-- Generated to dist/legal/credits.html by scripts/gen-legal.mjs; deployed to Hollownett/tallybite-legal. -->
 
-Everything TallyBite knows comes from open data, open models, and open source — listed here with
+Everything Gramwise knows comes from open data, open models, and open source — listed here with
 their licenses. Questions: hollownett@gmail.com.
 
 ## Nutrition data {#nutrition}
@@ -38,4 +38,4 @@ their licenses. Questions: hollownett@gmail.com.
 ## Open-source license texts {#licenses}
 
 The verbatim MIT, Apache-2.0, and SIL Open Font License texts for the components above travel with
-the app and are readable offline in TallyBite under Settings → Legal & credits → Credits & licenses.
+the app and are readable offline in Gramwise under Settings → Legal & credits → Credits & licenses.

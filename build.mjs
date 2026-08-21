@@ -1,4 +1,6 @@
-// Builds the TallyBite legal site: src/*.md -> styled static HTML. Run: node build.mjs
+// Builds the Gramwise legal site: src/*.md -> styled static HTML. Run: node build.mjs
+// (The repo and its URL keep the tallybite name deliberately - it is the privacy-policy URL
+// registered in Play Console; renaming it is a coordinated owner action. ADR-0062 in the app repo.)
 import { readFileSync, writeFileSync } from "node:fs";
 import { resolve } from "node:path";
 
@@ -42,23 +44,25 @@ const page = (title, bodyHtml, active) => `<!DOCTYPE html>
 <html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${title}</title>
+<link rel="icon" type="image/png" href="./icon-96.png">
 <style>
-  :root { --mint:#34f0a0; --bg:#0a0f0d; --card:#121a16; --ink:#f3fbf7; --muted:#8aa79a; --border:#1f2a24; }
+  :root { --accent:#7FC24A; --bg:#0a0f0d; --card:#121a16; --ink:#F5EFE4; --muted:#93A79B; --border:#1f2a24; }
   * { box-sizing:border-box; }
   body { margin:0; background:var(--bg); color:var(--ink);
     font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Plus Jakarta Sans",sans-serif; line-height:1.65; }
   header { padding:28px 20px; border-bottom:1px solid var(--border); background:radial-gradient(120% 140% at 20% 0%, #16241d, #0a0f0d 60%); }
   .wrap { max-width:760px; margin:0 auto; padding:0 20px; }
   .brand { display:flex; align-items:center; gap:12px; font-weight:800; font-size:22px; letter-spacing:-.02em; }
-  .brand .b { color:var(--mint); }
+  .brand .b { color:var(--accent); }
+  .brand img { border-radius:8px; }
   nav { margin-top:14px; display:flex; gap:18px; font-size:14px; }
   nav a { color:var(--muted); text-decoration:none; padding-bottom:2px; border-bottom:2px solid transparent; }
-  nav a.active, nav a:hover { color:var(--ink); border-color:var(--mint); }
+  nav a.active, nav a:hover { color:var(--ink); border-color:var(--accent); }
   main { padding:32px 0 72px; }
   h1 { font-size:30px; letter-spacing:-.02em; margin:0 0 6px; }
-  h2 { font-size:19px; margin:30px 0 8px; color:var(--mint); }
+  h2 { font-size:19px; margin:30px 0 8px; color:var(--accent); }
   p, li { color:#d6e4dd; }
-  a { color:var(--mint); }
+  a { color:var(--accent); }
   strong { color:var(--ink); }
   footer { border-top:1px solid var(--border); color:var(--muted); font-size:13px; padding:22px 0 40px; }
   svg { flex:none; }
@@ -66,14 +70,8 @@ const page = (title, bodyHtml, active) => `<!DOCTYPE html>
 <body>
 <header><div class="wrap">
   <div class="brand">
-    <svg width="34" height="34" viewBox="0 0 200 200" fill="none">
-      <circle cx="100" cy="100" r="82" stroke="#1a2b22" stroke-width="16"/>
-      <circle cx="100" cy="100" r="82" stroke="#34f0a0" stroke-width="16" stroke-linecap="round" stroke-dasharray="360 155" transform="rotate(-90 100 100)"/>
-      <path d="M72 134V88" stroke="#34f0a0" stroke-width="18" stroke-linecap="round"/>
-      <path d="M100 134V66" stroke="#1fd6c4" stroke-width="18" stroke-linecap="round"/>
-      <path d="M128 134V104" stroke="#a6e26a" stroke-width="18" stroke-linecap="round"/>
-    </svg>
-    <span>Tally<span class="b">Bite</span></span>
+    <img src="./icon-96.png" width="34" height="34" alt="">
+    <span>Gram<span class="b">wise</span></span>
   </div>
   <nav>
     <a href="./"${active === "home" ? ' class="active"' : ""}>Home</a>
@@ -85,7 +83,7 @@ const page = (title, bodyHtml, active) => `<!DOCTYPE html>
 <main><div class="wrap">
 ${bodyHtml}
 </div></main>
-<footer><div class="wrap">TallyBite · on-device calorie &amp; macro tracker · hollownett@gmail.com</div></footer>
+<footer><div class="wrap">Gramwise · privacy-first calorie &amp; macro tracker · hollownett@gmail.com</div></footer>
 </body></html>`;
 
 const dir = resolve(".");
@@ -93,18 +91,18 @@ const privacy = mdToHtml(readFileSync(resolve("src/privacy.md"), "utf8"));
 const terms = mdToHtml(readFileSync(resolve("src/terms.md"), "utf8"));
 const credits = mdToHtml(readFileSync(resolve("src/credits.md"), "utf8"));
 
-writeFileSync(resolve("privacy.html"), page("TallyBite — Privacy Policy", privacy, "privacy"));
-writeFileSync(resolve("terms.html"), page("TallyBite — Terms of Use", terms, "terms"));
-writeFileSync(resolve("credits.html"), page("TallyBite — Credits & Licenses", credits, "credits"));
+writeFileSync(resolve("privacy.html"), page("Gramwise — Privacy Policy", privacy, "privacy"));
+writeFileSync(resolve("terms.html"), page("Gramwise — Terms of Use", terms, "terms"));
+writeFileSync(resolve("credits.html"), page("Gramwise — Credits & Licenses", credits, "credits"));
 
-const home = `<h1>TallyBite legal</h1>
-<p>TallyBite is an on-device calorie &amp; macro tracker. Your food diary, weight, and photos stay on your phone — there is no account and no server copy.</p>
+const home = `<h1>Gramwise legal</h1>
+<p>Gramwise is a privacy-first calorie &amp; macro tracker. There is no account or login: your diary, profile and weight history stay on your phone, and anything that leaves it — a backup you share, a photo you choose to scan — is your explicit choice, described in the Privacy Policy.</p>
 <ul>
 <li><a href="./privacy.html">Privacy Policy</a></li>
 <li><a href="./terms.html">Terms of Use</a></li>
 <li><a href="./credits.html">Credits &amp; Licenses</a></li>
 </ul>
 <p>Questions: <a href="mailto:hollownett@gmail.com">hollownett@gmail.com</a>.</p>`;
-writeFileSync(resolve("index.html"), page("TallyBite — Legal", home, "home"));
+writeFileSync(resolve("index.html"), page("Gramwise — Legal", home, "home"));
 
 console.log("built index.html, privacy.html, terms.html, credits.html into", dir);

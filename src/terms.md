@@ -1,6 +1,6 @@
-# TallyBite — Terms of Use
+# Gramwise — Terms of Use
 
-**Last updated: July 30, 2026**
+**Last updated: August 21, 2026**
 
 <!--
   Canonical source for the Terms of Use. This ONE markdown file generates both the in-app
@@ -14,13 +14,13 @@
 
 ## Using the app {#agreement}
 
-By using TallyBite you agree to these terms. If you don't agree, please don't use the app. TallyBite is for adults making their own everyday food choices: you must be 18 or older to use it, and the app checks this when you enter your date of birth.
+By using Gramwise you agree to these terms. If you don't agree, please don't use the app. Gramwise is for adults making their own everyday food choices: you must be 18 or older to use it, and the app checks this when you enter your date of birth.
 
 ## Not medical advice {#not-medical-advice}
 
-TallyBite gives general nutrition information and estimates — it is not medical, dietetic, or other professional advice, and it doesn't diagnose or treat anything. Talk to a qualified professional before changing your diet, especially if you have a medical condition, are taking weight-loss medication, are pregnant or breastfeeding, or have a history of disordered eating. If tracking food or calories harms your wellbeing, stop and seek support.
+Gramwise gives general nutrition information and estimates — it is not medical, dietetic, or other professional advice, and it doesn't diagnose or treat anything. Talk to a qualified professional before changing your diet, especially if you have a medical condition, are taking weight-loss medication, are pregnant or breastfeeding, or have a history of disordered eating. If tracking food or calories harms your wellbeing, stop and seek support.
 
-You can set your own daily calorie target, and TallyBite will use whatever you enter. If you set it below your estimated resting burn, or below the level generally advised as the lowest daily intake without medical supervision, the app says so and still lets you choose — that choice is yours, and eating that little is something to discuss with a clinician first.
+You can set your own daily calorie target, and Gramwise will use whatever you enter. If you set it below your estimated resting burn, or below the level generally advised as the lowest daily intake without medical supervision, the app says so and still lets you choose — that choice is yours, and eating that little is something to discuss with a clinician first.
 
 ## Estimates, not measurements {#estimates}
 
@@ -28,7 +28,7 @@ Food recognition, portion sizes, nutrition values, calorie targets, and projecti
 
 ## Your data & backups {#your-data}
 
-Your data lives on this phone — there's no TallyBite account, and the recognition service keeps no server copy of your diary, profile, submitted photo, or meal description. The optional Advanced AI features send your whole meal photo, nutrition-label photo, or typed description to that service only when you choose the Advanced action. A meal photo is uncropped and can include anything in frame. If you draw a box around a food, the app also sends that rectangle and a wider context rectangle; if a kitchen scale is visible, the AI may read its display. The service keeps shared food-and-nutrition facts plus pseudonymous quota, entitlement-cache, and replay-protection records needed to operate the feature, as explained on the Privacy screen. Because your diary data is on your phone, backups are in your hands: uninstalling the app or losing the phone loses the data with it. Export a backup from Settings → Data & backup to keep your own copy.
+Your data lives on this phone — there's no Gramwise account, and the recognition service keeps no server copy of your diary, profile, submitted photo, or meal description. The optional Advanced AI features send your whole meal photo, nutrition-label photo, or typed description to that service only when you choose the Advanced action. A meal photo is uncropped and can include anything in frame. If you draw a box around a food, the app also sends that rectangle and a wider context rectangle; if a kitchen scale is visible, the AI may read its display. The service keeps shared food-and-nutrition facts plus pseudonymous quota, entitlement-cache, and replay-protection records needed to operate the feature, as explained on the Privacy screen. Because your diary data is on your phone, backups are in your hands: uninstalling the app or losing the phone loses the data with it. Export a backup from Settings → Data & backup to keep your own copy.
 
 ## Open data & licenses {#open-data}
 
@@ -40,7 +40,7 @@ Use the app for yourself and within the law. Don't present the app's estimates a
 
 ## Purchases and ads {#purchases}
 
-The core tracker is free, including unlimited on-device scanning. Advanced AI (meal photo, nutrition label, and Describe) starts as a 3-day free trial and then needs TallyBite Pro; there is no free Advanced-AI allowance, and Google Play alone decides whether your account is eligible for the trial. TallyBite Pro is an optional monthly or annual subscription that unlocks the Adaptive plan, weekly report, an ad-free experience, and up to 20 Advanced AI scans per day for each of those three tools. Adaptive starts from the same formula target as Auto, then can make small adjustments no more than every 14 days from complete food logs and weight trends. Each adjustment is limited to 50 kcal and the learned target stays within 150 kcal of the recalculated Auto target; first, calorie-lowering, direction-reversing, goal, health, plateau, and pace changes wait for your approval. Payment is handled by Google Play. The selected plan renews automatically at the price and billing period Google Play displays until you cancel it. You can manage or cancel in the app or in Google Play → Subscriptions; access normally continues through the current paid period, subject to Google Play's terms and applicable law. Free users may see one banner on Today. Advanced AI is opt-in.
+The core tracker is free: your whole diary, the bundled offline food search, describing a meal in words, saved foods and templates, manual entry, and the barcode scanner — with no account. Advanced AI (meal photo, nutrition label, and Describe) starts as a 3-day free trial and then needs Gramwise Pro; there is no free Advanced-AI allowance, and Google Play alone decides whether your account is eligible for the trial. There is no on-device photo scanning: every meal-photo and nutrition-label scan is Advanced AI, so it needs the trial or Pro and a connection. Gramwise Pro is an optional monthly or annual subscription that unlocks the Adaptive plan, weekly report, an ad-free experience, and up to 20 Advanced AI scans per day for each of those three tools. Adaptive starts from the same formula target as Auto, then keeps it in step with your complete food logs and weight trend, adjusting no more than every 14 days. An adjustment applies on its own and is announced on Today with a one-tap undo; it never sets a weekly pace more than 10% faster than the pace you chose. Reaching your goal, or a weight at which a deficit would be unsafe, still waits for your approval. Payment is handled by Google Play. The selected plan renews automatically at the price and billing period Google Play displays until you cancel it. You can manage or cancel in the app or in Google Play → Subscriptions; access normally continues through the current paid period, subject to Google Play's terms and applicable law. Free users may see one banner on Today. Advanced AI is opt-in.
 
 ## No warranty {#as-is}
 

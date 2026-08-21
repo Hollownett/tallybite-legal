@@ -1,7 +1,11 @@
-# TallyBite legal
+# Gramwise legal
 
-Public home for the **TallyBite** app's Privacy Policy and Terms of Use, served via GitHub Pages
+Public home for the **Gramwise** app's Privacy Policy and Terms of Use, served via GitHub Pages
 (required by Google Play for the privacy-policy URL).
+
+The repository and its `tallybite-legal` URL keep the app's previous name deliberately: this URL is
+the privacy-policy link registered in Play Console, so renaming the repo is a coordinated owner
+action, not a cleanup (see ADR-0062 in the app repository).
 
 - **Privacy Policy:** [`privacy.html`](privacy.html)
 - **Terms of Use:** [`terms.html`](terms.html)
