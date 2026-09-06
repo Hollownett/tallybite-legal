@@ -83,7 +83,7 @@ const page = (title, bodyHtml, active) => `<!DOCTYPE html>
 <main><div class="wrap">
 ${bodyHtml}
 </div></main>
-<footer><div class="wrap">Gramwise · privacy-first calorie &amp; macro tracker · hollownett@gmail.com</div></footer>
+<footer><div class="wrap">Gramwise · privacy-first calorie &amp; macro tracker · contact: the developer details on the <a href="https://play.google.com/store/apps/details?id=com.tallybite.app">Gramwise page on Google Play</a></div></footer>
 </body></html>`;
 
 const dir = resolve(".");
@@ -102,7 +102,7 @@ const home = `<h1>Gramwise legal</h1>
 <li><a href="./terms.html">Terms of Use</a></li>
 <li><a href="./credits.html">Credits &amp; Licenses</a></li>
 </ul>
-<p>Questions: <a href="mailto:hollownett@gmail.com">hollownett@gmail.com</a>.</p>`;
+<p>Questions: use the developer contact details on the <a href="https://play.google.com/store/apps/details?id=com.tallybite.app">Gramwise page on Google Play</a>.</p>`;
 writeFileSync(resolve("index.html"), page("Gramwise — Legal", home, "home"));
 
 console.log("built index.html, privacy.html, terms.html, credits.html into", dir);
